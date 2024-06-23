@@ -11,9 +11,13 @@ window.addEventListener("wheel",function(dets){
         })
     }
 })
-window.addEventListener("wheel",function(dets){
+window.addEventListener("wheel",function(){
     gsap.to("nav",{
         backgroundColor:"#433326c8"
+    })
+    gsap.to(".nl-img",{
+        backgroundColor:"white",
+        borderRadius:"20px"
     })
 })
 window.addEventListener("wheel",function(dets){
@@ -26,6 +30,19 @@ window.addEventListener("wheel",function(dets){
     else{
         gsap.to("#watch-queue2",{
             animationName:"anime"
+        })
+    }
+})
+window.addEventListener("wheel",function(dets){
+    if(dets.deltaY>0){
+        gsap.to("#pg1-container",{
+            transform:"scale(1.2)",
+        })
+    }
+
+    else{
+        gsap.to("#pg1-container",{
+            transform:"scale(1)"
         })
     }
 })
@@ -64,19 +81,6 @@ function nav(){
 
 }
 nav()
-function page5(){
-}
-page5()
-function page6(){
-    var vid=document.querySelector("#page6 video");
-    vid.addEventListener("mouseenter",function(){
-        vid.play();
-    })
-    vid.addEventListener("mouseleave",function(){
-        vid.pause();
-    })
-}
-page6()
 function page2(){
     gsap.from(".category",{
         opacity:0,
@@ -113,7 +117,33 @@ function page4(){
         }
     })
 }
+function page3(){
+    gsap.from("#watch-container img",{
+        scale:0,
+        opacity:0,
+        duration:2,
+        delay:0.5,
+        scrollTrigger:{
+            trigger:"#watch-container img",
+            scroller:"body"
+        }
+    })
+}
+page3()
 page4()
+function page5(){
+}
+page5()
+function page6(){
+    var vid=document.querySelector("#page6 video");
+    vid.addEventListener("mouseenter",function(){
+        vid.play();
+    })
+    vid.addEventListener("mouseleave",function(){
+        vid.pause();
+    })
+}
+page6()
 function footer(){
     var tl=gsap.timeline();
     tl.from(".fl,.fc,.fr",{

@@ -39,8 +39,17 @@ nav{
     z-index:999;
 }
 
+.nl-img{
+    height: 100%;
+    width:auto;
+    padding: 0.5% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #nl img{
-    height: 6vh;
+    height: 5vh;
     object-fit: cover;
     object-position: center;
 }
@@ -119,6 +128,7 @@ nav{
     justify-content:center;
     align-items:center;
     padding:1%;
+    overflow: hidden;
 }
 
 #pg1-container{
