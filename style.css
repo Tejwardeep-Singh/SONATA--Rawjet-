@@ -441,6 +441,11 @@ nav{
 
 .slide img{
     height: 40vh;
+    transition-duration:0.5s;
+    transition-timing-function: all ease;
+}
+.slide img:hover{
+    transform: scale(1.2);
 }
 .slide h4{
     font-size: 4vh;
@@ -652,6 +657,12 @@ nav{
     border: solid #433326 2px;
     border-radius: 50px;
     padding: 1%;
+    transition-duration: 0.5s;
+    transition-timing-function: all ease;
+}
+.page8-a:hover{
+    background-color: #111;
+    color: #dadada;
 }
 
 #footer{
