@@ -909,7 +909,8 @@ nav{
         font-size: small;
     }
     #nl img{
-        height: 5vh;
+        height: 3vh;
+        padding: 2%;
     }
     #page1{
         height: auto;
