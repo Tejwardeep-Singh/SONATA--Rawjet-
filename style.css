@@ -167,6 +167,7 @@ nav{
 #text span{
     transition-duration: 0.2s;
     transition-timing-function: all ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #text span:hover{
@@ -939,7 +940,7 @@ nav{
         object-position:top;
     }
     #text h1{
-        font-size:6vh;
+        font-size:5vh;
     }
 
     #text h3{
@@ -949,7 +950,7 @@ nav{
     }
 
     #text span{
-        font-size: 5vh;
+        font-size: 3.3vh;
         text-decoration:none;
     }
     #page2{
