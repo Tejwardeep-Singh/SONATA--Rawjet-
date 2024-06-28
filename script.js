@@ -19,6 +19,9 @@ window.addEventListener("wheel",function(){
         backgroundColor:"white",
         borderRadius:"20px"
     })
+    gsap.to("#menu,#magnifying-glass",{
+        color:"wheat"
+    })
 })
 window.addEventListener("wheel",function(dets){
     if(dets.deltaY>0){

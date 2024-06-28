@@ -80,6 +80,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 2vw;
+    position: relative;
 }
 
 #nr{
@@ -115,9 +116,11 @@ nav{
 }
 
 #menu{
-    opacity: 0;
-    color: wheat;
     display: none;
+    color: wheat;
+    position: absolute;
+    top: 2      0%;
+    right: 10%;
 }
 
 
@@ -886,7 +889,7 @@ nav{
         background-color:#433326c8;
     }
     #nl{
-        gap: 10vw;
+        gap: 2vw;
     }
     #search-bar{
         background-color: transparent;
@@ -914,6 +917,8 @@ nav{
     }
     #page1{
         height: auto;
+        margin: 0 0 4vh 0;
+        padding: 4vh 0 0 0;
     }
     #pg1-container{
         height: auto;
@@ -1066,12 +1071,14 @@ nav{
         width: 80vw;
     }
     .trending{
+        height: 80vw;
         width: 80vw;
         padding: 2%;
-        transform: translateX(5%);
+        transform: translateX(3%);
     }
     #pg7-container{
         padding: 2% 0;
+        
     }
     #footer{
         height: auto;
@@ -1165,6 +1172,10 @@ nav{
     #page8{
         height:fit-content;
         width: 100vw;
+        margin: 4vh 0 ;
+        border-bottom: none;
+        justify-content: space-between ;
+        gap: 2vh;
     }
     
     #pg8-container{
