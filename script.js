@@ -19,6 +19,9 @@ window.addEventListener("wheel",function(){
         backgroundColor:"white",
         borderRadius:"20px"
     })
+    gsap.to("#magnifying-glass , #menu,.nr-1,#nr span",{
+        color:"wheat"
+    })
 })
 window.addEventListener("wheel",function(dets){
     if(dets.deltaY>0){
@@ -105,6 +108,8 @@ function page2(){
         scrollTrigger:{
             trigger:"#page2 h1",
             scroller:"body",
+            start:"top bottom",
+            end:"bottom top"
         }
     })
 }
@@ -147,12 +152,12 @@ function page4(){
 }
 page4()
 function page5(){
-    gsap.from("#pg5-container1 .slide",{
+    gsap.from(".slide",{
         opacity:0,
         duration:1,
-        stagger:0.2,
+        stagger:0.5,
         scrollTrigger:{
-            trigger:"#pg5-container1 .slide",
+            trigger:".slide",
             scroller:"body",
         }
     })

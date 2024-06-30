@@ -92,7 +92,7 @@ nav{
 }
 
 #nr a{
-    color: #dadada;
+    color: #111;
     font-size: large;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -104,7 +104,6 @@ nav{
 
 #nr a:hover{
     text-decoration: overline;
-    color: #111;
 }
 
 .nav:hover{
@@ -311,6 +310,7 @@ nav{
     animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-name: anime2;
 }
 
 #watch-queue h2{
@@ -433,7 +433,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content:center;
-    overflow: hidden;
 }
 
 #pg5-container1{
@@ -442,11 +441,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content:flex-start;
+    overflow:scroll;
+    gap: 6vh;
 }
 
 .slide{
     height: 100%;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -455,7 +456,7 @@ nav{
 }
 
 .slide img{
-    height: 40vh;
+    height: 40%;
     transition-duration:0.5s;
     transition-timing-function: all ease;
 }
@@ -467,7 +468,6 @@ nav{
     font-weight: 900;
     color: #111;
     text-align: center;
-
 }
 
 #page6{
@@ -520,6 +520,7 @@ nav{
     animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-name: anime;
 }
 .pg0-queue h2{
     font-size: 4vh;
@@ -699,37 +700,38 @@ nav{
 }
 
 .fl{
-    height: 20vh;
+    height:100%;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-between;
     align-items: flex-start;
-    gap: 1vh;
+    gap:0.5vh;
     backdrop-filter: blur(5px);
     border: solid #dadada 2px;
-    padding:8% 4%;
+    padding:0.5% 2%;
 }
 
 .fc{
-    height:20vh;
+    height:100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-between;
     align-items:flex-start;
-    gap: 1vh;
+    gap: 0.5vh;
     backdrop-filter: blur(5px);
     border: solid #dadada 2px;
-    padding:8% 4%;
+    padding:0.5% 2%;
 }
 
 .fr{
-    height: 20vh;
+    height:100%;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
+    align-items: center;
     backdrop-filter: blur(5px);
     border: solid #dadada 2px;
-    padding:6% 4%;
+    padding:0.5% 2%;
 }
 
 #fc-n{
@@ -739,7 +741,7 @@ nav{
 }
 
 #footer h4{
-    font-size:x-large;
+    font-size:large;
     font-weight: 400;
     color:white;
 }
@@ -849,10 +851,21 @@ nav{
     justify-content: center;
     flex-direction: column;
     padding: 2% 0;
+    position: relative;
+    overflow: hidden;
+}
+#pg10-img{
+    position: absolute;
+    left:-5%;
+    bottom:-25%;
+    height: 60vh;
+    width: auto;
+    z-index: 998;
+    rotate: -60deg;
 }
 
 #page10 h1{
-    font-size: 10vh;
+    font-size: 8vh;
     font-weight:900;
     color:#433326;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -879,9 +892,10 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 4%;
-    background-color: #433326;
+    background-color: #111;
     border-radius: 50px;
     box-shadow: 0 8px 16px 0 rgba(140, 79, 0, 0.647);
+    z-index: 999;
 }
 
 
@@ -944,7 +958,7 @@ nav{
     gap: 10px;
     border: none;
     border-radius: 50px;
-    background: wheat;
+    background:wheat;
     cursor: pointer;
     height: 5vh;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.575);
@@ -979,7 +993,7 @@ nav{
     }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
     .nav{
         height: auto;
         width: 80vw;
@@ -1010,7 +1024,7 @@ nav{
         display:none;
     }
     #magnifying-glass{
-        color: wheat;
+        color: #111;
     }
     #iframe{
         display: none;
@@ -1020,7 +1034,7 @@ nav{
         cursor: pointer;
         padding: 1%;
         display: flex;
-        color:wheat;
+        color:#111;
     }
     #nr a{
         font-size: small;
@@ -1188,14 +1202,17 @@ nav{
         width: 80vw;
     }
     .trending{
-        height: 80vw;
+        height:60vw;
         width: 80vw;
         padding: 2%;
         transform: translateX(3%);
     }
     #pg7-container{
         padding: 2% 0;
-        
+    }
+    .tr-img{
+        height:70%;
+        width: 100%;
     }
     #footer{
         height: auto;
@@ -1297,10 +1314,11 @@ nav{
     #pg8-container{
         height: auto;
         width: 100vw;
+        align-items: flex-start;
     }
     #pg8-container img{
         height: 20vh;
-        width: 100vw;
+        width: 80vw;
     }
     #pg8-blur-bottom{
         height: 3vh;
@@ -1324,6 +1342,7 @@ nav{
     
     .page8-a{
         font-size:3vh;
+        padding: 1.5%;
     }
     .pg0-queue h2{
         font-size:x-large;
@@ -1368,5 +1387,8 @@ nav{
     }
     #page10 h1{
         font-size: 3.5vh;
+    }
+    #pg10-img{
+        display: none;
     }
 }
