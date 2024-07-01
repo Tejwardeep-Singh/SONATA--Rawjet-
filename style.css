@@ -166,6 +166,7 @@ nav:hover{
     transition-duration: 0.2s;
     transition-timing-function: all ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
 }
 
 #text span:hover{
@@ -457,6 +458,7 @@ nav:hover{
     height: 40%;
     transition-duration:0.5s;
     transition-timing-function: all ease;
+    cursor: pointer;
 }
 .slide img:hover{
     transform: scale(1.2);
@@ -528,6 +530,7 @@ nav:hover{
     color: transparent;
     transition-duration: 0.5s;
     transition-timing-function: all ease;
+    cursor: pointer;
 }
 
 .pg0-queue h2:hover{
@@ -660,6 +663,7 @@ nav:hover{
     padding: 1%;
     transition-duration: 0.5s;
     transition-timing-function: all ease;
+    cursor: pointer;
 }
 .page8-a:hover{
     background-color: #111;
@@ -803,6 +807,7 @@ nav:hover{
     object-fit: cover;
     object-position: center;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 #pg9-container a:hover{
@@ -1101,7 +1106,7 @@ nav:hover{
     #watch-queue{
         height:40vh;
         width: 100vw;
-        overflow: visible;
+        overflow:hidden;
     }
     #watch-queue h2{
         font-size: xx-large;
@@ -1167,6 +1172,7 @@ nav:hover{
         width: 10vh;
         transition-duration: 1s;
         transition-timing-function: all ease;
+        cursor: pointer;
     }
 
     .slide img:hover{
