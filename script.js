@@ -11,7 +11,32 @@ window.addEventListener("wheel",function(dets){
         })
     }
 })
-window.addEventListener("wheel",function(){
+window.addEventListener("touchmove",function(dets){
+    if(dets.deltaY>0){
+        gsap.to(".pg0-queue",{
+            animationName:"anime"
+        })
+    }
+
+    else{
+        gsap.to(".pg0-queue",{
+            animationName:"anime2"
+        })
+    }
+})
+window.addEventListener('wheel',function(){
+    gsap.to("nav",{
+        backgroundColor:"#433326c8"
+    })
+    gsap.to(".nl-img",{
+        backgroundColor:"white",
+        borderRadius:"20px"
+    })
+    gsap.to("#magnifying-glass , #menu,.nr-1,#nr span",{
+        color:"wheat"
+    })
+})
+window.addEventListener('touchmove',function(){
     gsap.to("nav",{
         backgroundColor:"#433326c8"
     })
@@ -24,6 +49,19 @@ window.addEventListener("wheel",function(){
     })
 })
 window.addEventListener("wheel",function(dets){
+    if(dets.deltaY>0){
+        gsap.to("#watch-queue2",{
+            animationName:"anime2"
+        })
+    }
+
+    else{
+        gsap.to("#watch-queue2",{
+            animationName:"anime"
+        })
+    }
+})
+window.addEventListener("touchmove",function(dets){
     if(dets.deltaY>0){
         gsap.to("#watch-queue2",{
             animationName:"anime2"
@@ -49,11 +87,23 @@ window.addEventListener("wheel",function(dets){
         })
     }
 })
+window.addEventListener("touchmove",function(dets){
+    if(dets.deltaY>0){
+        gsap.to("#pg1-container",{
+            transform:"scale(1.2)",
+        })
+    }
+
+    else{
+        gsap.to("#pg1-container",{
+            transform:"scale(1)"
+        })
+    }
+})
 function nav(){
     tl = gsap.timeline();
 
     tl.from("#menu",{
-        x:100,
         opacity:0,
         duration:1,
         stagger:0.5
@@ -78,7 +128,7 @@ function nav(){
     box2.addEventListener("mouseleave",function(){
         gsap.to("#nr",{
             display:"none",
-            delay:3
+            delay:2
         })
     })
 
