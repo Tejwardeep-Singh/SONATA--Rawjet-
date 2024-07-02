@@ -124,10 +124,6 @@ function nav(){
             display:"flex"
         })
     })
-    gsap.to("#nr",{
-        display:"none",
-        delay:2
-    })
     box2.addEventListener("mouseleave",function(){
         gsap.to("#nr",{
             display:"none",

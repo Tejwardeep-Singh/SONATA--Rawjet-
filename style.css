@@ -187,7 +187,7 @@ nav:hover{
 #pg1-image-container{
     height: 80vh;
     width: 50%;
-    background-color: red;
+    background-color: #dadada;
     clip-path: polygon(6% 45%, 0 2%, 89% 8%, 79% 34%, 100% 31%, 100% 84%, 81% 77%, 73% 95%, 0 99%, 10% 71%, 29% 65%, 28% 45%);
 }
 
