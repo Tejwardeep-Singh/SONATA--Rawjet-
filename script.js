@@ -132,11 +132,17 @@ function nav(){
 nav()
 function page1(){
     var tl=gsap.timeline()
-    tl.from("#page1 #text",{
+    tl.from("#page1 h1",{
+        opacity:0,
+        duration:2,
+        stagger:1
+    })
+    tl.from("#page1 #text h3",{
         x:-1000,
-        y:-500,
-        duration:1,
-        opacity:0
+        y:500,
+        opacity:0,
+        duration:2,
+        border:"0px"
     })
     tl.from("#page1 #pg1-image-container",{
         x:1000,
@@ -144,6 +150,7 @@ function page1(){
         duration:1,
         opacity:0
     })
+   
 }
 page1()
 function page2(){
@@ -152,10 +159,8 @@ function page2(){
         duration:1,
         stagger:0.2,
         scrollTrigger:{
-            trigger:"#page2 h1",
+            trigger:".category",
             scroller:"body",
-            start:"top bottom",
-            end:"bottom top"
         }
     })
 }
@@ -204,30 +209,11 @@ function page5(){
         stagger:0.5,
         scrollTrigger:{
             trigger:".slide",
-            scroller:"body",
+            scroller:"body"
         }
     })
 }
 page5()
-function page6(){
-    gsap.from("#page6 #video",{
-        opacity:0,
-        duration:1,
-        scale:"0",
-        scrollTrigger:{
-            trigger:"#page6 #video",
-            scroller:"body"
-        }
-    })
-    var vid=document.querySelector("#page6 video");
-    vid.addEventListener("mouseenter",function(){
-        vid.play();
-    })
-    vid.addEventListener("mouseleave",function(){
-        vid.pause();
-    })
-}
-page6()
 function page7(){
     gsap.from("#pg7-container .trending",{
         opacity:0,

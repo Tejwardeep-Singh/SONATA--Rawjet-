@@ -10,9 +10,9 @@ html,body{
     width: 100%;
     overflow-x: hidden;
     background-color: #dadada;
+    scroll-behavior: smooth;
 }
 main{
-    height: 100%;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -1056,13 +1056,19 @@ nav:hover{
         object-fit: cover;
         object-position:top;
     }
+    #h1-container{
+        height: 5vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     #text h1{
         font-size:5vh;
         width: 50vw;
         text-align: center;
         gap: 1.2%;
     }
-
     #text h3{
         font-size: medium;
         width: 50vw;
@@ -1070,6 +1076,9 @@ nav:hover{
     }
 
     #text span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 4vh;
         text-decoration: none;
     }
