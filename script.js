@@ -106,7 +106,7 @@ function nav(){
     tl.from("#menu",{
         opacity:0,
         duration:1,
-        stagger:0.5
+        delay:0.5
     }) 
 
     tl.from("#nl img,#search-bar,.nl img ,.nr span,.nr i",{
@@ -135,7 +135,7 @@ function page1(){
     tl.from("#page1 h1",{
         opacity:0,
         duration:2,
-        stagger:1
+        delay:1
     })
     tl.from("#page1 #text h3",{
         x:-1000,
