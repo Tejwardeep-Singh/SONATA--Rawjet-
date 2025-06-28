@@ -8,13 +8,13 @@
 html,body{
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
     background-color: #dadada;
     scroll-behavior: smooth;
 }
 main{
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 nav{
@@ -310,6 +310,7 @@ nav:hover{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-name: anime2;
+    animation-direction: alternate;
 }
 
 #watch-queue h2{
@@ -689,7 +690,7 @@ nav:hover{
 }
 
 .fl{
-    height:100%;
+    height:fit-content;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -701,7 +702,7 @@ nav:hover{
 }
 
 .fc{
-    height:100%;
+    height:fit-content;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -713,7 +714,7 @@ nav:hover{
 }
 
 .fr{
-    height:100%;
+    height:fit-content;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
